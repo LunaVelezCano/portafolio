@@ -1,0 +1,51 @@
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 13px;
+    padding: 15px;
+    color: beige;
+    background-color: rgb(192, 190, 189);
+}
+
+.columna
+{
+    margin: 10px;
+    padding: 10px;
+    background-color:rgb(237, 217, 237)  ;
+    border-radius: 15px;
+    border-style: dashed;
+}
+
+.parrafo
+{
+    color: blueviolet;
+    background-color: aquamarine;
+}
+
+.fotografia
+{
+width: 150px;
+height: 160px;
+border-radius: 90px;
+}
+
+.ficha
+{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    background-color:rgb(250, 238, 219);
+    border-radius: 25px;
+}
+
+.fila
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
