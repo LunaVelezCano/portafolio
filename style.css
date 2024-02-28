@@ -1,51 +1,73 @@
-header
-{
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('images.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+}
+
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column; /* Cambia a dirección de columna para apilar elementos */
+    align-items: center; /* Centra los elementos en el eje transversal */
     border-radius: 13px;
     padding: 15px;
     color: beige;
     background-color: rgb(192, 190, 189);
 }
 
-.columna
-{
+.header-content,
+.header-image {
+    width: 100%; /* Hace que ambos elementos ocupen el 100% del ancho del contenedor */
+}
+
+.columna {
     margin: 10px;
     padding: 10px;
-    background-color:rgb(237, 217, 237)  ;
+    background-color: rgba(237, 217, 237, 0.5); /* Reduce el valor alpha para mayor transparencia */
     border-radius: 15px;
     border-style: dashed;
 }
 
-.parrafo
-{
+.parrafo {
     color: blueviolet;
     background-color: aquamarine;
 }
 
-.fotografia
-{
-width: 150px;
-height: 160px;
-border-radius: 90px;
+.fotografia {
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    max-width: 150px; /* Establece un ancho máximo para evitar que la imagen sea demasiado grande */
+    height: auto; /* Hace que la altura se ajuste automáticamente */
+    border-radius: 50%;
 }
 
-.ficha
-{
+.ficha {
     margin: 10px;
     padding: 10px;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-style: solid;
-    background-color:rgb(250, 238, 219);
+    background-color: rgba(250, 238, 219, 0.5); /* Reduce el valor alpha para mayor transparencia */
     border-radius: 25px;
 }
 
-.fila
-{
+.fila {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+footer article {
+    flex: 1;
+    padding: 10px;
+    color: white;
 }
